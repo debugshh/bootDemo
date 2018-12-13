@@ -31,6 +31,12 @@ public class UserServiceImpl implements UserService {
         return userMapper.findById(id);
     }
 
+    public User findUserById2(Integer id) {
+
+
+        return userMapper.findById(id);
+    }
+
     @Override
     @Transactional
     public void addUser(String name, Integer age) {
